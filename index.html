@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon | Abdelrhman Orabi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* Animation background glow */
+    .glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+      animation: pulse 6s infinite ease-in-out;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.3); opacity: 0.2; }
+    }
+
+    /* Logo */
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 30px;
+      animation: float 4s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      font-weight: 700;
+      z-index: 1;
+      position: relative;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #ccc;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    .line {
+      width: 100px;
+      height: 3px;
+      background: white;
+      margin: 20px auto;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from { width: 0; opacity: 0; }
+      to { width: 100px; opacity: 1; }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      animation: fadeIn 3s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <!-- حط هنا اللوجو بتاعك -->
+  <img src="https://i.postimg.cc/4yyxs6TM/Dark-Blue-Minimalist-Letter-A-Logo-removebg-preview.png" alt="Logo" class="logo" />
+
+  <h1>COMING SOON</h1>
+  <div class="line"></div>
+  <p>We’re crafting something amazing. Stay tuned!</p>
+
+  <footer>© 2025 Abdelrhman Orabi</footer>
+</body>
+</html>
